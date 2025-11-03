@@ -27,13 +27,27 @@
   h1 {
     font-family: 'Pirata One', cursive;
     color: #2c1a00;
-    font-size: clamp(1.8rem, 6vw, 3rem);
+    font-size: clamp(1.8rem, 5vw, 3rem);
     text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
     margin-bottom: 1.5rem;
     text-align: center;
-    padding: 0 0.5rem;
+   
+    /* New lines below ↓ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+      gap: 0.25rem;
+    }
+  }
+ 
   /* Envelope */
   .scroll {
     position: relative;
@@ -171,7 +185,7 @@
 
   @media (max-width: 480px) {
     h1 {
-      font-size: 1rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
     }
     .scroll {
@@ -296,5 +310,6 @@ window.addEventListener('resize', () => {
 
 </body>
 </html>
+
 
 
