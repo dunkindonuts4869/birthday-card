@@ -109,7 +109,7 @@
 
   /* Letter */
   .letter {
-    position: fixed;
+    position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%) scale(0.5);
     width: 90vw;
@@ -135,6 +135,12 @@
     transform: translate(-50%, -50%) scale(1);
     pointer-events: auto;
   }
+ 
+ .scroll {
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
   .letter::-webkit-scrollbar {
     width: 6px;
@@ -310,6 +316,7 @@ window.addEventListener('resize', () => {
 
 </body>
 </html>
+
 
 
 
